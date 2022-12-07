@@ -1,0 +1,63 @@
+/* ---- Breadcrumbs ---- */
+.breadcrumbs-container{
+    display:grid;
+    grid-template-columns:1fr 4fr 1fr;
+    grid-template-rows:fit-content;
+    grid-template-areas:
+    '. bready .'
+}
+
+.breadcrumbs {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    grid-area: bready;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: black;
+    grid-area: bready;
+    font-family:verdana;
+    font-size:16px;
+}
+
+.breadcrumbs a:hover{
+    text-decoration:underline;
+    color:black;
+}
+
+strong{
+    font-family:verdana;
+    font-size:16px;
+}
+
+/* ---- List of all the recipes ---- */
+.all-list {
+    grid-area: section;
+}
+
+.all-list h1 {
+    color: black;
+    grid-area: section;
+    background-color: rgba(151, 137, 87, 0.25);
+    padding: 30px 30px 0 30px;
+}
+
+/* ---- Recipe Cards ---- */
+.product-list {  
+    grid-area: product; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgba(151, 137, 87, 0.25);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.product-image {
+    margin: 0;
+}
+
+.product-card {
+    margin: 0;
+}

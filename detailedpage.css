@@ -1,0 +1,247 @@
+/* ---- Breadcrumbs ---- */
+.breadcrumbs-container{
+    display:grid;
+    grid-template-columns:1fr 4fr 1fr;
+    grid-template-rows:fit-content;
+    grid-template-areas:
+    '. bready .'
+}
+
+.breadcrumbs {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    grid-area: bready;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: black;
+    grid-area: bready;
+    font-family:verdana;
+    font-size:16px;
+}
+
+.breadcrumbs a:hover{
+    text-decoration:underline;
+    color:black;
+}
+
+.breadcrumbs strong {
+    font-family:verdana;
+    font-size:16px;
+}
+
+/* ---- "Hero section" ---- */
+.detailed-section {
+    grid-area: section;
+    width: fit-content;
+}
+
+.detail-img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+
+.detailed-section h2 {
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    font-size: 26px;
+}
+
+.detailed-section p {
+    color: #616161;
+    margin-top: 0;
+}
+
+.hero-information {
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+}
+
+.bu-heart {
+  border-radius: 20px;
+  border: solid 1px #b22222;
+  background-color: white;
+  color: #b22222;
+  font-size: 18px;
+  padding: 7px 14px;
+}
+
+.two-buttons {
+    gap: 10px;
+}
+
+.bu-heart:hover {
+    border: solid 1px #b22222;
+    background-color: #b22222;
+    color: white;
+}
+
+.bu-cart {
+    border-radius: 20px;
+    border: solid 1px #b22222;
+    background-color: #b22222;
+    color: white;
+    font-size: 18px;
+    padding: 7px 14px;
+}
+
+/* ---- Information about the recipe ---- */
+.recipe-information {
+    grid-area: product;
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+    font-size: 18px;
+}
+
+.box1 {
+    width: 40%;
+    background-color: #ededed;
+    border-radius: 20px;
+    padding-bottom: 25px;
+    min-width:300px;
+}
+
+.allergens {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #d7d7d7;
+    border-radius: 20px 20px 0 0;
+    padding: 10px;
+}
+
+.ingredients-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.ingredients-list h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.ingredients-list p {
+    display: flex;
+    justify-content: center;    
+}
+
+.box2 {
+    width: 40%;
+    background-color: #ededed;
+    border-radius: 20px;
+    min-width:330px;
+}
+
+.specific-information {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #d7d7d7;
+    border-radius: 20px 20px 0 0;
+    padding: 10px;
+}
+
+.cooking-steps {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    /* the following 11 lines of code were adapted from https://www.freecodecamp.org/news/numbering-with-css-counters/, accessed: 05-12-2022 */
+    list-style-type: none;
+    counter-reset: css-counter 0;
+} 
+
+.cooking-steps p {
+    counter-increment: css-counter 1;
+}
+
+.cooking-steps p:before {
+    content: counter(css-counter) ". ";
+}
+/* cite ends here */
+.cooking-steps h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.cooking-steps div {
+  padding: 30px;
+}
+
+/* ---- Suggestions ---- */
+.suggestion-box {
+    background-color: rgba(151, 137, 87, 0.25);
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-area: product2;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.suggestion-box h1 {
+    color: black;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.suggestion-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    flex-wrap:wrap;
+}
+
+/* ---- Media Query -- button, hero img, ingredients ---- */
+@media screen and (max-width: 745px) {
+    .two-buttons {
+        display: flex;
+        flex-direction: column;
+        padding-right: 5px;
+    }
+    .bu-cart {
+        font-size: 16px;
+        padding: 6px 8px;
+    }
+    .bu-heart {
+        font-size: 16px;
+        padding: 6px 8px;
+    }
+    .recipe-information  {
+        flex-direction: column;
+    }
+    .hero-information {
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .detail-img {
+        max-width: 400px;
+        display: flex;
+        justify-content: center;
+    }
+    .two-buttons {
+        padding-right: 0px;
+    }
+}
+
+/* ---- Media Query -- breadcrums ---- */
+@media screen and (max-width: 1024px) {
+    .breadcrumbs-container {
+        grid-template-columns: 0.5fr 4fr 1fr;
+    }
+}

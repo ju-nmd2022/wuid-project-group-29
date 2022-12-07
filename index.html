@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="Homepage.css">
+    <link rel="stylesheet" href="grid.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8.4.5/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+    
+<body>
+
+<!------------- header --------------->
+<div class="headbox">
+    <div class ="navbar">
+        <a href="index.html"><img class="Logotype" src="IMG/Logotype.png"/></a>
+        <div class="navbox">
+            <a class="link" href="categories.html"><p id="navtext" class="navtext">Categories</p></a>
+                <div id="box" class="box">
+                     <form name="search">
+                        <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+                    </form>
+                    <i class="fa fa-search" aria-hidden="true" style="font-size: 23px;"></i>
+                 </div>
+            <div class="navicon1"><i class="fa fa-shopping-cart" style="font-size: 23px;"></i></div>
+            <a href="account.html"><div class="navicon"><i class="fa fa-user" style="font-size: 23px;"></i></div></a>
+    
+        </div>
+    </div>
+</div>
+
+<!------------- content --------------->
+    <div class="container">
+        <section class="herosection">
+            <h1 class="Headline">Today's Recipe</h1>
+         <a href="detailpage.html"> <img class="todays" src="IMG/MeatballToday.png"/></a>
+          <div class="backgroundbox"><p class="todaystitle">Classic Swedish Meatballs</p>
+        <img class="stars" src="IMG/stars.png"/><p class="votes">2034 votes</p></div>
+        </section>
+ <!-- Section -- Top sellers -->
+       <!-- the following 73 lines of code were adapted and 3 more time reused to make the sliders for the recipes from https://www.youtube.com/watch?v=OQZNAMjC6Vg&t=423s accessed: 29-11-2022 -->
+       <section class="product"> 
+        <h2 class="product-category">Top Sellers</h2>
+        <button class="pre-btn"><img src="IMG/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="IMG/arrow.png" alt=""></button>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/1-1.png" class="product-thumb" alt="">
+                    <span class="ratings">⭐4.8</span>
+                    <button class="card-btn">add to favorites</button>
+                    <span class="spec-info"><strong>Time</strong> </br>20 min</br></br> <strong>Difficulty</strong> </br>Beginner</br></br><strong>Price</strong></br> 5.00€ per portion</span>
+                </div>
+                <div class="product-info">
+                    <h2 class="recipe-name">Pasta arrabbiata </h2>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="img/1-2.png" class="product-thumb" alt="">
+                    <span class="ratings">⭐3.6</span>
+                    <button class="card-btn">add to favorites</button>
+                    <span class="spec-info"><strong>Time</strong> </br>60 min</br></br> <strong>Difficulty</strong> </br>Intermediate</br></br><strong>Price</strong></br> 7.00€ per portion</span>
+                </div>
+                <div class="product-info">
+                    <h2 class="recipe-name">Salmon with Chicken</h2>
+                    </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/1-3.png" class="product-thumb" alt="">
+                    <button class="card-btn">add to favorites</button>
+                    <span class="spec-info"><strong>Time</strong> </br>35 min</br></br> <strong>Difficulty</strong> </br>Beginner</br></br><strong>Price</strong></br> 3.00€ per portion</span>
+                    <span class="ratings">⭐4.2</span>
+                </div>
+                <div class="product-info">
+                    <h2 class="recipe-name">Tomato Soup with garlic bread</h2>
+                    </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/1-4.png" class="product-thumb" alt="">
+                    <button class="card-btn">add to favorites</button>
+                    <span class="spec-info"><strong>Time</strong> </br>60 min</br></br> <strong>Difficulty</strong> </br>Advanced</br></br><strong>Price</strong></br> 6.50€ per portion</span>
+                    <span class="ratings">⭐3.1</span>
+                </div>
+                <div class="product-info">
+                    <h2 class="recipe-name">Ground Beef Pierogies</h2>
+                    </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/1-5.png" class="product-thumb" alt="">
+                    <button class="card-btn">add to favorites</button>
+                    <span class="spec-info"><strong>Time</strong> </br>60 min</br></br> <strong>Difficulty</strong> </br>Advanced</br></br><strong>Price</strong></br> 3.00€ per portion</span>
+                    <span class="ratings">⭐4.5</span>
+                </div>
+                <div class="product-info">
+                    <h2 class="recipe-name">french chocolate cake</h2>
+                    </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="img/1-6.png" class="product-thumb" alt="">
+                    <span class="ratings">⭐4.0</span>
+                    <span class="spec-info"><strong>Time</strong> </br>30 min</br></br> <strong>Difficulty</strong> </br>Beginner</br></br><strong>Price</strong></br> 7.50€ per portion</span>
+                    <button class="card-btn">add to favorites</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="recipe-name">beef pasta</h2>
+                    </div>
+            </div>
+        </div>
+        <!-- end of cite, and this block is reused 3 more times -->
+        <!-- Section -- New Recipes -->
+    </section>
+     <section class="product2"> 
+        <h2 class="product-category">New Recipes</h2>
+        <button class="pre-btn"><img src="IMG/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="IMG/arrow.png" alt=""></button>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/2-1.png" class="product-thumb" alt=""><span class="ratings">⭐4.9</span>
+                    <button class="card-btn">add to favorites</button>
+                    <span class="spec-info"><strong>Time</strong> </br>45 min</br></br> <strong>Difficulty</strong> </br>Beginner</br></br><strong>Price</strong></br> 2.50€ per portion</span>
+                </div>
+                <div class="product-info">
+                    <h2 class="recipe-name">Crown cake with lime</h2>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/2-2.png" class="product-thumb" alt="">
+                    <span class="ratings">⭐3.2</span>
+                    <button class="card-btn">add to favorites</button>
+                    <span class="spec-info"><strong>Time</strong> </br>5 min</br></br> <strong>Difficulty</strong> </br>beginner</br></br><strong>Price</strong></br> 2.00€ per portion</span>
+                </div>
+                <div class="product-info">
+                    <h2 class="recipe-name">Shake with cranberries</h2>
+                    </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/2-3.png" class="product-thumb" alt="">
+                    <button class="card-btn">add to favorites</button>
+                    <span class="spec-info"><strong>Time</strong> </br>30 min</br></br> <strong>Difficulty</strong> </br>Beginner</br></br><strong>Price</strong></br> 5.00€ per portion</span>
+                    <span class="ratings">⭐4.1</span>
+                </div>
+                <div class="product-info">
+                    <h2 class="recipe-name">Dirty fries</h2>
+                    </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/2-4.png" class="product-thumb" alt="">
+                    <button class="card-btn">add to favorites</button>
+                    <span class="spec-info"><strong>Time</strong> </br>10 min</br></br> <strong>Difficulty</strong> </br>Intermediate</br></br><strong>Price</strong></br> 7.50€ per portion</span>
+                    <span class="ratings">⭐4.0</span>
+                </div>
+                <div class="product-info">
+                    <h2 class="recipe-name">Krustader with shrimp scramble</h2>
+                    </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/2-5.png" class="product-thumb" alt="">
+                    <button class="card-btn">add to favorites</button>
+                    <span class="spec-info"><strong>Time</strong> </br>25 min</br></br> <strong>Difficulty</strong> </br>Intermediate</br></br><strong>Price</strong></br> 3.00€ per portion</span>
+                    <span class="ratings">⭐3.8</span>
+                </div>
+                <div class="product-info">
+                    <h2 class="recipe-name">Creamy chickpea stew</h2>
+                    </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="img/2-6.png" class="product-thumb" alt="">
+                    <span class="ratings">⭐4.0</span>
+                    <span class="spec-info"><strong>Time</strong> </br>30 min</br></br> <strong>Difficulty</strong> </br>Intermediate</br></br><strong>Price</strong></br> 8.50€ per portion</span>
+                    <button class="card-btn">add to favorites</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="recipe-name">Ramen with chicken</h2>
+                    </div> 
+            </div>
+        </div>
+        
+    </section>
+<!-- Section -- Vegan -->
+    <section class="product3"> 
+        <h2 class="product-category">Vegan</h2>
+        <button class="pre-btn"><img src="IMG/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="IMG/arrow.png" alt=""></button>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/3-6.png" class="product-thumb" alt="">
+                    <span class="ratings">⭐4.1</span>
+                    <button class="card-btn">add to favorites</button>
+                    <span class="spec-info"><strong>Time</strong> </br>15 min</br></br> <strong>Difficulty</strong> </br>Beginner</br></br><strong>Price</strong></br> 2.00€ per portion</span>
+                </div>
+                <div class="product-info">
+                    <h2 class="recipe-name">Pizza salad </h2>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/3-1.png" class="product-thumb" alt="">
+                    <span class="ratings">⭐4.2</span>
+                    <button class="card-btn">add to favorites</button>
+                    <span class="spec-info"><strong>Time</strong> </br>30 min</br></br> <strong>Difficulty</strong> </br>Beginner</br></br><strong>Price</strong></br> 4.50€ per portion</span>
+                </div>
+                <div class="product-info">
+                    <h2 class="recipe-name">Lentil curry</h2>
+                    </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/3-2.png" class="product-thumb" alt="">
+                    <button class="card-btn">add to favorites</button>
+                    <span class="spec-info"><strong>Time</strong> </br>30 min</br></br> <strong>Difficulty</strong> </br>Beginner</br></br><strong>Price</strong></br> 4.00€ per portion</span>
+                    <span class="ratings">⭐3.9</span>
+                </div>
+                <div class="product-info">
+                    <h2 class="recipe-name">Yakiniku with mushroom</h2>
+                    </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/3-3.png" class="product-thumb" alt="">
+                    <button class="card-btn">add to favorites</button>
+                    <span class="spec-info"><strong>Time</strong> </br>40 min</br></br> <strong>Difficulty</strong> </br>Intermediate</br></br><strong>Price</strong></br> 6.50€ per portion</span>
+                    <span class="ratings">⭐4.1</span>
+                </div>
+                <div class="product-info">
+                    <h2 class="recipe-name">Homemade Falafel</h2>
+                    </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/3-4.png" class="product-thumb" alt="">
+                    <button class="card-btn">add to favorites</button>
+                    <span class="spec-info"><strong>Time</strong> </br>20 min</br></br> <strong>Difficulty</strong> </br>Beginner</br></br><strong>Price</strong></br> 3.50€ per portion</span>
+                    <span class="ratings">⭐4.1</span>
+                </div>
+                <div class="product-info">
+                    <h2 class="recipe-name">Avocado pasta</h2>
+                    </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    
+                    <img src="img/3-5.png" class="product-thumb" alt="">
+                    <span class="ratings">⭐4.0</span>
+                    <span class="spec-info"><strong>Time</strong> </br>40 min</br></br> <strong>Difficulty</strong> </br>Intermediate</br></br><strong>Price</strong></br> 7.50€ per portion</span>
+                    <button class="card-btn">add to favorites</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="recipe-name">mexican bowl</h2>
+                    </div> 
+            </div>
+        </div>
+        
+    </section>
+<!-- Section -- Cheap and Easy -->
+    <section class="product4"> 
+        <h2 class="product-category">Cheap and Easy</h2>
+        <button class="pre-btn"><img src="IMG/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="IMG/arrow.png" alt=""></button>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/4-1.png" class="product-thumb" alt="">
+                    <span class="ratings">⭐4.0</span>
+                    <button class="card-btn">add to favorites</button>
+                    <span class="spec-info"><strong>Time</strong> </br>20 min</br></br> <strong>Difficulty</strong> </br>Intermediate</br></br><strong>Price</strong></br> 6.00€ per portion</span>
+                </div>
+                <div class="product-info">
+                    <h2 class="recipe-name">chicken meatloaf </h2>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/4-2.png" class="product-thumb" alt="">
+                    <span class="ratings">⭐2.9</span>
+                    <button class="card-btn">add to favorites</button>
+                    <span class="spec-info"><strong>Time</strong> </br>25 min</br></br> <strong>Difficulty</strong> </br>Beginner</br></br><strong>Price</strong></br> 4.00€ per portion</span>
+                </div>
+                <div class="product-info">
+                    <h2 class="recipe-name">Salmon tart with dill and chives</h2>
+                    </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/4-3.png" class="product-thumb" alt="">
+                    <button class="card-btn">add to favorites</button>
+                    <span class="spec-info"><strong>Time</strong> </br>10 min</br></br> <strong>Difficulty</strong> </br>Beginner</br></br><strong>Price</strong></br> 4.00€ per portion</span>
+                    <span class="ratings">⭐4.0</span>
+                </div>
+                <div class="product-info">
+                    <h2 class="recipe-name">Salmon tartare</h2>
+                    </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/4-4.png" class="product-thumb" alt="">
+                    <button class="card-btn">add to favorites</button>
+                    <span class="spec-info"><strong>Time</strong> </br>100 min</br></br> <strong>Difficulty</strong> </br>Intermediate</br></br><strong>Price</strong></br> 4.50€ per portion</span>
+                    <span class="ratings">⭐5.0</span>
+                </div>
+                <div class="product-info">
+                    <h2 class="recipe-name">Sausage bread</h2>
+                    </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/4-5.png" class="product-thumb" alt="">
+                    <button class="card-btn">add to favorites</button>
+                    <span class="spec-info"><strong>Time</strong> </br>25 min</br></br> <strong>Difficulty</strong> </br>Beginner</br></br><strong>Price</strong></br> 5.00€ per portion</span>
+                    <span class="ratings">⭐3.8</span>
+                </div>
+                <div class="product-info">
+                    <h2 class="recipe-name">pasta gratin with minced meat</h2>
+                    </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/4-6.png" class="product-thumb" alt="">
+                    <span class="ratings">⭐4.1</span>
+                    <span class="spec-info"><strong>Time</strong> </br>60 min</br></br> <strong>Difficulty</strong> </br>Intermediate</br></br><strong>Price</strong></br> 4.00€ per portion</span>
+                    <button class="card-btn">add to favorites</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="recipe-name">baklava squares</h2>
+                    </div> 
+            </div>
+        </div>
+        
+    </section>
+    </div> 
+    <section>
+        <div class="box-text">
+            <h2>Want to find more? Look here </h2>
+            <a href="allrecipes.html"><button class="bu-allRecipes">See all Recipes</button></a>
+        </div>
+    </section>
+    
+
+
+<!------------- footer --------------->
+<div class="footer">
+    <div class="footcontent">
+        <p><strong>Contact</strong></br>Email : TastyGood@gmail.com</br>
+        Phone : +46 12 345 67 89</br>Adress : Foodystreet 1, Stockholm, Sweden</p>
+        <div>
+            <a class="link" href="aboutus.html"><h3>About us</h3></a>
+            <p class="foot-icons">
+                <i class="fa fa-facebook-square"></i>
+                <i class="fa fa-pinterest-square"></i>
+                <i class="fa fa-twitter-square"></i>
+            </p>
+        </div>
+    </div>
+</div>
+  
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="Tasty.js" defer></script>
+</body>
+</html>

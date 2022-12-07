@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Homepage.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <!-------------------- header ------------------->
+    <header>
+        <a href="index.html"><img class="checkout-Logo"src="IMG/Logotype.png"></img></a> 
+    </header>
+    <!-------------------- checkout ------------------->
+     <div class="container">
+     <a class="continue-shopping-breadcrumb" href="index.html">Continue Shopping</a>
+   
+    <!------------------ my shopping cart --------------------->
+        <div class="sub-header">
+                <h3>your shopping cart</h3>
+            </div>
+    <div class="your-shopping-cart">
+            
+            <div class="item-container">
+                <div class="item-1">
+                    <img class="cart-img" src="/IMG/5-1.png"/>
+                    <div class="item-info">
+                        <p class="item-name">Bramborák</p>
+                        <p class="item-price">4,00€ / port</p>
+                    </div>
+                    <i class="fa fa-trash"></i>
+                </div>
+                <div class="item-1" style="margin-bottom:0px;">
+                <img class="cart-img" src="/IMG/sourpi.jpg"/>
+                    <div class="item-info">
+                        <p class="item-name">Sourdough Pizza</p>
+                        <p class="item-price">2,50€ / port</p>
+                    </div>
+                    <i class="fa fa-trash"></i>
+            </div>
+        </div>
+            <div class="right-side-info">
+                <div class="portions">
+                    <p class="portions-text">portions:</p>
+                    <div class="portionbox-box"><div class="portions-box">
+                        <p id="portion-number">12</p>
+                    </div>
+                    <div class="portion-arrows">
+                        <i class='fa fa-angle-up'></i>
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                </div></div>
+                    
+                <div class="allergens">
+                    <div class="allergen-flex">
+                        <p class="allergen-headline">allergens</p>
+                        <div class="allergen-icons">
+                            <img class="allergen-img" src="img/eggs.png"/>
+                            <img class="allergen-img" src="img/milk.png"/>
+                            <img class="allergen-img" src="img/wheat.png"/>
+                            <img class="allergen-img" src="img/tomato.png"/>
+                            <img class="allergen-img" src="img/cheese.png"/>
+                            <img class="allergen-img" src="img/potato.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="total-cost">
+                    <p class="total-cost-text">total price</p>
+                    <p class="total-cost-number">40€</p>
+                </div>
+        </div>
+    </div>
+    <!------------------ personal information --------------------->
+<div class="sub-header-two">
+    <h3>personal information</h3>
+</div>
+<div class="personal-information">
+    <div class="PI1">
+        <div class="name">
+            <input class="long" placeholder="First Name">
+            <input class="long" placeholder="Second Name">
+        </div>
+        <div class="email-phone">
+            <input class="long" placeholder="Email">
+            <input class="long" placeholder="Phone Number">
+        </div>
+    </div>
+    <div class="billing-adress">
+        <div class="adress-appart">
+            <input class="long" placeholder="Adress">
+            <input class="long" placeholder="Country">
+        </div>
+        <div class="country-city-postal">
+            <div class="hej">
+                <input class="shorter" placeholder="*Appartment Nr.">
+                <input class="short" placeholder="Postal Nr">
+            </div>
+            <input class="longer" placeholder="City">
+        </div>
+    </div>   
+</div> 
+<!------------------ shipping method --------------------->
+ <div class="sub-header-three">
+    <h3>shipping method</h3>
+ </div>
+ <div class="shipping-method">
+    
+    <div class="delivery-options">
+        <div class="home-delivery-button">
+            <i class="fa fa-home" style="font-size:100px; margin-top:40px;"></i>
+            <p class="choose-delivery">Home Delivery</p>
+        </div>
+        <div class="pick-up-button">
+            <i class="fa fa-truck" style="font-size:100px; margin-top:40px;"></i>
+            <p class="choose-delivery">Pick Up</p>
+        </div>
+    </div>
+    <div class="shipping-speed">
+        <div class="shipping-speed-normal">
+            <!-- the following 1 line of code were adapted and changed for our preference from https://www.youtube.com/watch?v=kPrZdhJHU1c&ab_channel=Chidre%27sTechTutorials accessed: 06-12-2022  -->
+            <input type="radio" name="deliveryspeed" id="normal">
+            <label id="delivery-label" for="normal">Normal Delivery</label>
+            <p class="delivery-text">Shipment is expected withing 3-5 workdays</p>
+        </div>
+        <div class="shipping-speed-express">
+            <input type="radio" name="deliveryspeed" id="express">
+            <label id="delivery-label" for="express">Express Delivery</label>
+            <p class="delivery-text">Shipment is expected withing 3-5 workdays</p>
+        </div>
+        <div class="shipping-speed-specified">
+            <input type="radio" name="deliveryspeed" id="specified">
+            <label id="delivery-label" for="specified">Specified Delivery Date</label>
+            <p class="delivery-text">Shipment is expected withing 3-5 workdays</br>
+            NOTE! A week notice is mandatory!</p>
+        </div>
+    </div>
+</div>
+<!------------------ payment method --------------------->
+ <div class="sub-header-four">
+    <h3>Payment Method</h3>
+ </div>
+ <div class="payment-method">
+        <div class="credit-debit-card">
+            <div class="sub-head-credit">
+                <div class="payment-input-box"><input type="radio" name="pay-method" id="Credit-or-Debit-Card">
+                <label id="adojkn" for="Credit-or-Debit-card">Credit/Debit Card</label></div>
+                <div class="card-pictures"><img class="cardimages" src="IMG/visa.png"><img class="cardimages" src="IMG/mastercard.png"></div>
+            </div>
+            <div class="card-information">
+                <div class="card-first-name">
+                    <p class="pay-input-text">First Name</p>
+                    <input class="pay-long" placeholder="Anna">
+                </div>
+                <div class="card-last-name">
+                    <p class="pay-input-text">Last Name</p>
+                    <input class="pay-long" placeholder="Svensson">
+                </div>    
+                <div class="card-number">
+                    <p class="pay-input-text">Card Number</p>
+                    <input class="pay-long" placeholder="1234 5678 9012 3456">
+                </div>    
+                <div class="card-expiration-date-CVV-CVC">
+                    <div class="1234">
+                    <p class="pay-input-text">Expiration Date</p>
+                    <input class="pay-shorter" placeholder="month/year"></div>
+                    <div class="5678">
+                    <p class="pay-input-text">CVV/CVC</p>
+                    <input class="pay-short" placeholder="123"></div>
+                </div>    
+            </div>
+        </div>
+        <div class="klarna">
+            <div class="sub-head-credit">
+                <div class="payment-input-box"><input type="radio" name="pay-method" id="Credit-or-Debit-Card">
+                <label id="adojkn" for="Credit-or-Debit-card">Klarna</label></div>
+                <div class="card-pictures"><img class="cardimages" src="IMG/klarna.png"></div>
+            </div>
+        </div>
+        <div class="bank-transfer">
+            <div class="sub-head-credit">
+                <div class="payment-input-box"><input type="radio" name="pay-method" id="Credit-or-Debit-Card">
+                <label id="adojkn" for="Credit-or-Debit-card">Bank Transfer</label></div>
+                <div class="card-pictures"></div>
+            </div>
+        </div>
+        <div class="pay-later">
+            <div class="sub-head-credit">
+                <div class="payment-input-box"><input type="radio" name="pay-method" id="Credit-or-Debit-Card">
+                <label id="adojkn" for="Credit-or-Debit-card">Pay Later</label></div>
+                <div class="card-pictures"></div>
+            </div>
+        </div>
+        <div class="paypal">
+<div class="sub-head-credit">
+                <div class="payment-input-box"><input type="radio" name="pay-method" id="Credit-or-Debit-Card">
+                <label id="adojkn" for="Credit-or-Debit-card">PayPal</label></div>
+                <div class="card-pictures"><img class="cardimages" src="IMG/paypal.png"></div>
+            </div>
+        </div>
+</div> 
+<!------------------ purchase button --------------------->
+<div class="purchase-button">
+    <div class="purchase-actual-button">
+        <p class="purchase-text">Purchase</p>
+    </div>
+</div> 
+<!------------------ end of container --------------------->
+</div>
+
+
+</body>
+</html>

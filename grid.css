@@ -1,0 +1,90 @@
+.headbox{
+    display:grid;
+    grid-template-columns:1fr 4fr 1fr;
+    grid-template-rows:80px;
+    grid-template-areas: '. navbar .';
+    background-color: #7C0A02;
+}
+
+.footer{
+    background-color: RGBA(241,188,49,0.95);    
+    display:grid;
+    grid-template-columns:1fr 4fr 1fr;
+    grid-template-rows:fit-content;
+    grid-template-areas: '. footcontent .';
+}
+
+.container{
+    display:grid;
+    grid-template-columns:1fr 4fr 1fr;
+    grid-template-rows:fit-content fit-content fit-content fit-content fit-content;
+    grid-template-areas:
+    '. section .'
+    '. product .'
+    '. product2 .'
+    '. product3 .'
+    '. product4 .'
+    '. button-section .'
+}
+
+body{
+    margin:0px;
+}
+
+/* ---- Media Queries -- Header ---- */
+@media screen and (max-width: 730px) {
+    .headbox {
+        grid-template-columns: 0.5fr 4fr 0.5fr;
+    }
+}
+
+@media screen and (max-width: 476px) {
+    .headbox {
+        grid-template-columns: 0.2fr 4fr 0.2fr;
+    }
+
+.navicon{
+    padding-right: 5px;
+    padding-left: 9px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 37px;
+    height: 37px;
+  }
+  
+  .navicon1{
+    padding-right: 5px;
+    padding-left: 6px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 37px;
+    height: 37px;
+  }
+
+  .fa-search {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .input {
+    padding-right: 5px;
+    padding-left: 9px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    width: 37px;
+    height: 37px;
+  }
+}  
+
+@media screen and (max-width: 415px) {
+    .headbox {
+        grid-template-columns: 0.01fr 4fr 0.01fr;
+    }
+    .navbox {
+        padding-right: 5px;
+    }
+    .Logotype {
+        padding-left: 5px;
+    }
+
+}

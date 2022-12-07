@@ -1,0 +1,134 @@
+/*--------------------grid container--------------------*/
+
+.title-container{
+    display:grid;
+    grid-template-columns:1fr 4fr 1fr;
+    grid-template-rows:fit-content fit-content;
+    grid-template-areas:
+    '. title .'
+    '. content .'
+}
+
+/* ----------------title css----------------*/
+
+.categories-headline{
+    color:black;
+    font-size:40px;
+    margin-left:0px;
+    margin-top:20px;
+    margin-bottom:30px;
+}
+
+.title-section{
+    grid-area:title;
+}
+
+/*----------------dropdown menu----------------*/
+
+.categoriesMenu{
+    position: relative;
+    display: inline-block;
+}
+
+.glyphicon-chevron-down{
+    width:fit-content;
+    height:fit-content;
+    margin-left:20px;
+    margin-top:30px;
+    font-size:25px;
+}
+
+.dropdownBox{  
+    z-index: 1;
+    position: absolute;
+    background-color: #ffffff;
+    display: none;
+    margin-left:10px;
+    min-width: 120px;
+    border-radius:4px;
+    border:solid 1px rgb(239, 239, 239)
+}
+
+.dropdownBox a{
+    color:#3a3a3a;
+    padding-top: 6px;
+    padding-bottom:6px;
+    padding-left: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: block;
+    border: solid 0px 1px rgb(255, 255, 255);
+}
+
+.dropdownBox a:hover{
+    background-color:#b22222;
+    color:white;
+    text-decoration: none;
+    border-radius:4px;
+}
+.categoriesMenu:hover .dropdownBox {
+    display:block;
+}
+
+.categoriesMenu:hover .glyphicon-chevron-down{
+    rotate:180deg
+}
+
+/*-----------------category recipes section------------------*/
+
+.container-content{
+    background-color:rgba(151, 137, 87, 0.25);
+    padding:30px;
+}
+
+#category-subheading-appetizers, #category-subheading-salads, #category-subheading-soups, 
+#category-subheading-pasta, #category-subheading-pizza, #category-subheading-bbq, #category-subheading-deserts{
+    color:black;
+    text-transform:capitalize;
+    font-weight:lighter;
+}
+
+.category-sections{
+    width:100%;
+    height:fit-content;
+    float:left;
+    margin-top:10px;
+}
+
+.product-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.container-content{
+    grid-area:content;
+}
+
+.product-card{
+    width: 250px;
+    height: 450px;
+  
+}
+
+/*---------------breadcrumbs----------------*/
+.breadcrumbs {
+    margin-top: 10px;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: black;
+    font-family:verdana;
+    font-size:16px;
+}
+
+.breadcrumbs a:hover{
+    text-decoration:underline;
+    color:black;
+}
+
+strong{
+    font-family:verdana;
+    font-size:16px;
+}
