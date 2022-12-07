@@ -21,13 +21,13 @@ header{
     fit-content fit-content fit-content fit-content fit-content fit-content;
     grid-template-areas:
     '. continue-shopping .'
-    '. subheader-one .'
+    'subheader-one subheader-one subheader-one'
     '. your-shopping-cart .'
-    '. subheader-two .'
+    'subheader-two subheader-two subheader-two'
     '. personal-information .'
-    '. subheader-three .'
+    'subheader-three subheader-three subheader-three'
     '. shipping-method .'
-    '. subheader-four .'
+    'subheader-four subheader-four subheader-four'
     '. payment-method .'
     '. purchase-button .'
 }
@@ -389,6 +389,16 @@ h3{
     margin-right:50px;
 }
 
+#home{
+    font-size:100px;
+    margin-top:40px;
+}
+
+#truck{
+    font-size:100px;
+    margin-top:40px;
+}
+
 .pick-up-button{
     height:200px;
     width:200px;
@@ -599,7 +609,7 @@ h3{
     margin-right:10px;
 }
 
-#adojkn{
+#credit-debit-label{
     cursor:pointer;
     font-family:verdana;
     font-size:18px;
@@ -794,10 +804,160 @@ h3{
     .your-shopping-cart{
         flex-direction: column;
     }
+    .right-side-info{
+        margin-top:20px;
+        align-self:center;
+        margin-left:0px;
+    }
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:900px){
+    .item-container{
+        width:500px;
+        align-self:center;
+        margin-left:0px;
+        margin-right:0px;
+    }
+    .payment-method{
+        width:500px;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .PI1{
+        flex-direction: column;
+        margin-bottom:0px;
+    }
+    .billing-adress{
+        flex-direction:column;
+    }
+    .app-post-box{
+        margin-top:20px;
+    }
+    .personal-information{
+        margin-left:auto;
+        margin-right:auto;
+        width:fit-content;
+    }
+    .portions{
+        width:200px;
+    }
+    .allergens{
+        width:200px;
+    }
+    .total-cost{
+        width:200px;
+    }
+    .right-side-info{
+        width:fit-content;
+    }
+}
+
+@media screen and (max-width:600px){
     .item-name{
         margin-bottom:0px;
+    }
+
+    .item-container{
+        width:300px;
+    }
+
+    .cart-img{
+        width:100px;
+        height:100px;
+        display:block;
+    }
+
+    .portions{
+        width:200px;
+    }
+}
+
+
+@media screen and (max-width:500px){
+    .payment-method{
+        width:350px;
+    }
+
+    .pay-long{
+        width:250px;
+    }
+
+    .pay-shorter{
+        width:100px;
+    }
+    .pay-short{
+        width:50px;
+    }
+
+    #Credit-or-Debit-Card[type="radio"]{
+        margin-left:10px;
+    }
+    .card-pictures{
+        margin-right:10px;
+        display:flex;
+        justify-content: center;
+    }
+    .sub-head-credit{
+        height:fit-content;
+        padding-bottom:10px;
+    }
+
+    .shipping-speed{
+        width:290px;
+        padding-left:30px;
+        padding-right:30px;
+    }
+
+    .delivery-options{
+        width:350px;
+    }
+
+    .home-delivery-button{
+        margin-right:10px;
+        height:165px;
+        width:165px;
+    }
+
+    #home{
+        margin-top:20px;
+    }
+
+    #truck{
+        margin-top:20px;
+    }
+
+    .pick-up-button{
+        margin-left:10px;
+        height:165px;
+        width:165px;
+    }
+
+    .long{
+        margin-right:0px;
+        margin-left:0px;
+        width:300px;
+        padding-left:5px;
+    }
+
+    .longer{
+        margin-right:0px;
+        margin-left:0px;
+        width:250px;
+        padding-left:5px;
+    }
+
+    .shorter{
+        margin-right:0px;
+        margin-left:0px;
+        width:200px;
+        padding-left:5px;
+    }
+
+    .short{
+        margin-right:0px;
+        margin-left:30px;
+        width:60px;
+        padding-left:5px;
     }
 }
