@@ -229,8 +229,10 @@
 
 .suggestion-box h1 {
     color: black;
-    margin-bottom: 15px;
-    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top:20px;
+    font-weight:normal;
+    text-align:center;
 }
 
 .suggestion-container {
