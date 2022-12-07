@@ -21,6 +21,7 @@ h1{
   padding-right: 50px;
   padding-top: 13px;
   font-weight: bolder;
+  font-family:verdana;
 }
 
 #navtext {
@@ -164,6 +165,7 @@ h1{
     color:black;
     font-size:40px;
     font-weight:lighter;
+    font-family:georgia;
 }
 
 .todaystitle{
@@ -286,6 +288,7 @@ p{
     font-weight: 500;
     margin-bottom: 30px;
     text-transform: capitalize;
+    font-family:Georgia;
   }
   
   .product-container {
