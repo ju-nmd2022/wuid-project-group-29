@@ -88,6 +88,43 @@
     padding: 7px 14px;
 }
 
+/* ---- Animation -- Heart ---- */
+
+.bu-cart {
+    border-radius: 20px;
+    border: solid 1px #b22222;
+    background-color: #b22222;
+    color: white;
+    font-size: 18px;
+    padding: 7px 14px;
+}
+
+/* ---- Animation -- Cart ---- */
+.bu-cart:hover .fa-shopping-cart {
+    animation-name: cart-shake;
+    animation-duration: 3s;
+    animation-delay: none;
+    animation-iteration-count: 3;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+
+@keyframes cart-shake {
+    0% {
+        transform : rotate(90deg);
+    }
+    33% {
+        transform : rotate(-90deg);
+    }
+    66% {
+        transform : rotate(90deg);
+    }
+    100% {
+        transform : rotate(-90deg);
+    }
+   
+}
+
 /* ---- Information about the recipe ---- */
 .recipe-information {
     grid-area: product;
