@@ -60,6 +60,10 @@
     justify-content: space-between;
 }
 
+.two-buttons {
+    gap: 10px;
+}
+
 .bu-heart {
   border-radius: 20px;
   border: solid 1px #b22222;
@@ -69,26 +73,16 @@
   padding: 7px 14px;
 }
 
-.two-buttons {
-    gap: 10px;
-}
-
 .bu-heart:hover {
     border: solid 1px #b22222;
     background-color: #b22222;
     color: white;
 }
 
-.bu-cart {
-    border-radius: 20px;
-    border: solid 1px #b22222;
-    background-color: #b22222;
-    color: white;
-    font-size: 18px;
-    padding: 7px 14px;
-}
-
 /* ---- Animation -- Heart ---- */
+
+
+
 
 .bu-cart {
     border-radius: 20px;
