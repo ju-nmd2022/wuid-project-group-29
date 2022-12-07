@@ -95,7 +95,7 @@
             <input class="long" placeholder="Country">
         </div>
         <div class="country-city-postal">
-            <div class="hej">
+            <div class="app-post-box">
                 <input class="shorter" placeholder="*Appartment Nr.">
                 <input class="short" placeholder="Postal Nr">
             </div>
@@ -111,11 +111,11 @@
     
     <div class="delivery-options">
         <div class="home-delivery-button">
-            <i class="fa fa-home" style="font-size:100px; margin-top:40px;"></i>
+            <i class="fa fa-home" id="home"></i>
             <p class="choose-delivery">Home Delivery</p>
         </div>
         <div class="pick-up-button">
-            <i class="fa fa-truck" style="font-size:100px; margin-top:40px;"></i>
+            <i class="fa fa-truck" id="truck"></i>
             <p class="choose-delivery">Pick Up</p>
         </div>
     </div>
@@ -147,7 +147,7 @@
         <div class="credit-debit-card">
             <div class="sub-head-credit">
                 <div class="payment-input-box"><input type="radio" name="pay-method" id="Credit-or-Debit-Card">
-                <label id="adojkn" for="Credit-or-Debit-card">Credit/Debit Card</label></div>
+                <label id="credit-debit-label" for="Credit-or-Debit-card">Credit/Debit</label></div>
                 <div class="card-pictures"><img class="cardimages" src="IMG/visa.png"><img class="cardimages" src="IMG/mastercard.png"></div>
             </div>
             <div class="card-information">
