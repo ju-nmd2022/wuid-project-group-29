@@ -41,6 +41,7 @@ strong{
     grid-area: section;
     background-color: rgba(151, 137, 87, 0.25);
     padding: 30px 30px 0 30px;
+    font-weight:normal;
 }
 
 /* ---- Recipe Cards ---- */

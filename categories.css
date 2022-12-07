@@ -17,6 +17,7 @@
     margin-left:0px;
     margin-top:20px;
     margin-bottom:30px;
+    font-family:georgia;
 }
 
 .title-section{
@@ -85,7 +86,8 @@
 #category-subheading-pasta, #category-subheading-pizza, #category-subheading-bbq, #category-subheading-deserts{
     color:black;
     text-transform:capitalize;
-    font-weight:lighter;
+    font-weight:light;
+    font-family:Georgia;
 }
 
 .category-sections{
