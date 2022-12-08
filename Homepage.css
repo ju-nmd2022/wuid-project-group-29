@@ -465,7 +465,7 @@ p{
  border-color: #B22222;
  color: #B22222;
  border-style:solid;
- /* border: ;  */
+ cursor: pointer;
 }
 
 .bu-allRecipes:active{

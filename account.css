@@ -65,6 +65,7 @@ body{
     background-color: white;
     border: 2px solid #4db533 ;
     color: #4db533;
+    cursor: pointer;
 }
 
 .signin-box a {

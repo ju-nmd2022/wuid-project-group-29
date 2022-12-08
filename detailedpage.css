@@ -85,6 +85,7 @@
     border: solid 1px #b22222;
     background-color: #b22222;
     color: white;
+    cursor: pointer;
 }
 
 /* ---- Animation -- Heart ---- */
@@ -100,6 +101,10 @@
     color: white;
     font-size: 18px;
     padding: 7px 14px;
+}
+
+.bu-cart:hover {
+    cursor: pointer;
 }
 
 /* ---- Animation -- Cart ---- */
