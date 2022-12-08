@@ -47,10 +47,10 @@
                 <img class="stars" src="IMG/stars.png" alt="five stars indicating the rating 5/5"/><p class="votes">2034 votes</p>
             </div>
             <div class="two-buttons">
-                <button class="bu-heart"><!-- fa fa-heart -- this is the filled heart -->
+                <button id="bu-heart" class="bu-heart"><!-- fa fa-heart -- this is the filled heart -->
                     add to 
-                    <i style="font-size:16px" class="fa fa-heart-o"></i>
-                    <i style="font-size:16px" class="fa fa-heart"></i>
+                    <i style="font-size:16px" id="fa-heart-empty" class="fa fa-heart-o"></i>
+                    <i style="font-size:16px" id="fa-heart-filled" class="fa fa-heart"></i>
                 </button>
                 <button class="bu-cart">add to <i style="font-size:16px" class="fa fa-shopping-cart"></i></button>
             </div>
@@ -178,6 +178,7 @@
   
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="search.js" defer></script>
+<script src="heart.js" defer></script>
     
 </body>
 </html>

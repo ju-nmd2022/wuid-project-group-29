@@ -73,6 +73,14 @@
   padding: 7px 14px;
 }
 
+.bu-heart .fa-heart-empty {
+    display: block;
+}
+
+.bu-heart #fa-heart-filled {
+    display: none;
+}
+
 .bu-heart:hover {
     border: solid 1px #b22222;
     background-color: #b22222;
@@ -80,10 +88,9 @@
 }
 
 /* ---- Animation -- Heart ---- */
-.fa-heart {
-    display: none;
-}
-
+/* .bu-heart:active {
+    animation-name: ;
+} */
 
 
 .bu-cart {
