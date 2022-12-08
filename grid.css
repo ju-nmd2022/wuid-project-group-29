@@ -74,6 +74,9 @@ body{
     width: 37px;
     height: 37px;
   }
+  .box:hover input{
+    width: 120px;
+  }
 }  
 
 @media screen and (max-width: 415px) {

@@ -18,13 +18,20 @@ productContainers.forEach((item, i) => {
     })
 })
 
-const box = document.getElementById ("box");
-const navtext = document.getElementById ("navtext");
+const box = document.getElementById("Inputbox");
+const navtext = document.getElementById("navtext");
+console.log(box);
 
-isNavtextHidden = false;
 
-function hideNavtext() {
-    if (isNavtextHidden === false) {
-    navtext.style.display = none ;
-    }
-}
+box.addEventListener('mouseover',
+function myHover() {
+    console.log("working");
+    navtext.style.display = 'none';
+})
+
+
+box.addEventListener('mouseout',
+function myHover() {
+    console.log("working");
+    navtext.style.display = 'block';
+})
