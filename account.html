@@ -16,9 +16,9 @@
         <div class ="navbar">
             <a href="index.html"><img class="Logotype" src="IMG/Logotype.png" alt="Tasty Goods logotype"/></a>
             <div class="navbox">
-                <a class="link" href="categories.html"><p class="navtext">Categories</p></a>
+                <a class="link" href="categories.html"><p id="navtext" class="navtext">Categories</p></a>
                     <div class="box">
-                         <form name="search">
+                         <form id="Inputbox" name="search">
                             <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
                         </form>
                         <i class="fa fa-search" aria-hidden="true" style="font-size: 23px;"></i>
@@ -63,7 +63,7 @@
         </div>
     </div>
 </div>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="Tasty.js"></script>
+
+<script src="search.js" defer></script>
 </body>
 </html>
