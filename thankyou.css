@@ -1,0 +1,62 @@
+body{
+    background: url(IMG/cuttingboard.png); 
+}
+
+.thx-box {
+    grid-area: product;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.thx-box p {
+    text-align: center;
+}
+
+.thx-box a {
+    color: #eeeeee;
+}
+
+.thx-box a:hover {
+    font-weight: bold;
+}
+
+.thx-box a:active {
+    color: #eeeeee;
+}
+
+.thx-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 500px;
+    height: 270px;
+    background: rgba(221, 221, 221, 0.7);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.thx-content h1 {
+    color: black;
+    font-family: Georgia;
+}
+
+.thx-content p {
+    color: black;
+}
+
+.thx-content span {
+    color: black;
+    font-family: Verdana;
+    font-size: 14px;
+}
