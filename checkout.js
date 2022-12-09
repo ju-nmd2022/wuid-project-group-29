@@ -1,28 +1,39 @@
 /* --------- variables ------- */
-
 let isPersonalInformationFilled = false;
 let isShippingMethodChosen = false;
 let isPaymentMethodFilled = false;
 
-const personalInformation = document.getElementById("personal-information");
+window.addEventListener('load', function() {
 const shippingMethod = document.getElementById("shipping-method");
 const paymentMethod = document.getElementById("payment-method");
 const purchaseButton = document.getElementById("purchase-button");
 
-const cityInput = document.getElementsByClassName("longer");
-const normalSpeed = document.getElementsByClassName("shipping-speed-normal");
-const cvvCvc = document.getElementsByClassName("pay-short");
+const cityInput = document.getElementById("longer");
+const normalSpeed = document.getElementById("normal");
+const cvvCvc = document.getElementById("pay-short");
 
 /* ---------Is Personal Information Filled?--------- */
+cityInput.addEventListener('input', function() {
+    if (isPersonalInformationFilled = true) {
+    shippingMethod.style.display = 'flex';
+    console.log("Personal Information filled");
+    }
+})
 
-/* https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event */
+/* ---------Is Deliver Option Chosen?--------- */
+normalSpeed.addEventListener('click', function() {
+    if (isShippingMethodChosen = true) {
+        paymentMethod.style.display = 'block';
+        console.log("Delivery Option chosen");
+    }
+})
 
-cityInput.addEventListener('input', (showShippingMethod) {
-    shippingMethod.style.display='block';
-    console.log("hej");
-}
+/* ---------Is Card Information Filled?--------- */
+cvvCvc.addEventListener('input', function() {
+    if (isPaymentMethodFilled = true) {
+    purchaseButton.style.display = 'flex';
+    console.log("Card Details filled");
+    }
+})
 
-function showShippingMethod(){
-    shippingMethod.style.display='block';
-    console.log("hej")
-}
+})

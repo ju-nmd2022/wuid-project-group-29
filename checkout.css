@@ -298,7 +298,7 @@ h3{
     background-color:#c8c8c8;
 }
 
-.longer{
+#longer{
     width:250px;
     height:40px;
     margin-left:20px;
@@ -310,7 +310,7 @@ h3{
     padding-left:25px;
 }
 
-.longer:focus{
+#longer:focus{
     border-style:none;
     outline:none;
     background-color:#c8c8c8;
@@ -693,7 +693,7 @@ h3{
     margin-right:73px;
 }
 
-.pay-short{
+#pay-short{
     width:100px;
     height:40px;
     margin-bottom:5px;
