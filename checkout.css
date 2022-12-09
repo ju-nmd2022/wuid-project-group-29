@@ -236,7 +236,7 @@ h3{
     margin-top:80px;
 }
 /* --------------- personal information --------------- */
-.personal-information{
+#personal-information{
     grid-area:personal-information;
     width:100%;
     height:fit-content;
@@ -365,11 +365,12 @@ h3{
     margin-top:50px;
 }
 
-.shipping-method{
+#shipping-method{
     display:flex;
     flex-direction:column;
     flex-wrap:wrap;
     grid-area:shipping-method;
+    display:none;
 }
 
 .delivery-options{
@@ -657,11 +658,12 @@ h3{
     width:fit-content;
 }
 
-.payment-method{
+#payment-method{
     grid-area:payment-method;
     background-color:#d9d9d9;
     width:100%;
     height:fit-content;
+    display:none;
 }
 
 .credit-debit-card{
@@ -756,13 +758,14 @@ h3{
 }
 
 /* --------------- purchase button --------------- */
-.purchase-button{
+#purchase-button{
     grid-area:purchase-button;
     margin-top:40px;
     display:flex;
     justify-content: center;
     align-items: center;
     margin-bottom:40px;
+    display:none;
 }
 
 .purchase-actual-button{

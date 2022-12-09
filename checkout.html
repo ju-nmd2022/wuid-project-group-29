@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="checkout.css">
+    <script src="checkout.js"></script>
 </head>
 <body>
     <!-------------------- header ------------------->
@@ -48,7 +49,7 @@
                 <div class="portions">
                     <p class="portions-text">portions:</p>
                     <div class="portionbox-box"><div class="portions-box">
-                        <p id="portion-number">12</p>
+                        <p id="portion-number">4</p>
                     </div>
                     <div class="portion-arrows">
                         <i class='fa fa-angle-up'></i>
@@ -79,7 +80,7 @@
 <div class="sub-header-two">
     <h3>personal information</h3>
 </div>
-<div class="personal-information">
+<div id="personal-information">
     <div class="PI1">
         <div class="name">
             <input class="long" placeholder="First Name">
@@ -108,7 +109,7 @@
  <div class="sub-header-three">
     <h3>shipping method</h3>
  </div>
- <div class="shipping-method">
+ <div id="shipping-method">
     
     <div class="delivery-options">
         <div class="home-delivery-button">
@@ -144,7 +145,7 @@
  <div class="sub-header-four">
     <h3>Payment Method</h3>
  </div>
- <div class="payment-method">
+ <div id="payment-method">
         <div class="credit-debit-card">
             <div class="sub-head-credit">
                 <div class="payment-input-box"><input type="radio" name="pay-method" id="Credit-or-Debit-Card">
@@ -204,7 +205,7 @@
         </div>
 </div> 
 <!------------------ purchase button --------------------->
-<div class="purchase-button">
+<div id="purchase-button">
     <a href="thankyou.html" class ="purchase-link"><button class="purchase-actual-button"> Purchase
     </button></a>
 </div> 
