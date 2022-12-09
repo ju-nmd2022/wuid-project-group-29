@@ -453,7 +453,7 @@ h3{
     font-weight:normal;
     margin-top:15px;
 }
-/* https://www.youtube.com/watch?v=y93M3RoKQUE&ab_channel=CodingArtist */
+/* The following 106 lines of code were adapted from https://www.youtube.com/watch?v=y93M3RoKQUE&ab_channel=CodingArtist acc. 2022-12-06 */
 #normal[type="radio"]{
     width:20px;
     height:20px;
@@ -561,7 +561,7 @@ h3{
 #specified[type="radio"]:checked:after{
     display:block;
 }
-/*to here*/
+
 /* --------------- payment method --------------- */
 .sub-header-four{
     width:100%;
