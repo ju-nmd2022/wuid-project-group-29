@@ -77,7 +77,7 @@ body{
 
 @keyframes tasty-truck{
     0%{
-        transform: scaleX(1.0) scaleY(1.0) translateX(185px)
+        transform: scaleX(1.0) scaleY(1.0) translateX(180px)
     } 
 
     12.5%{
@@ -109,7 +109,7 @@ body{
     }
 
     100%{
-        transform: scaleX(1.0) scaleY(1.0) translateX(-185px)
+        transform: scaleX(1.0) scaleY(1.0) translateX(-180px)
     }
 }
 
@@ -123,6 +123,44 @@ body{
         height:100px;
         width:auto;
     }
+
+    @keyframes tasty-truck{
+        0%{
+            transform: scaleX(1.0) scaleY(1.0) translateX(170px)
+        } 
+    
+        12.5%{
+            transform: scaleX(0.95) scaleY(1.05) translateX(130px)
+        }
+    
+        25%{
+            transform: scaleX(1) scaleY(1) translateX(77px)
+        }
+    
+        37.5%{
+            transform: scaleX(1.05) scaleY(0.95) translateX(30px)
+        }
+    
+        50%{
+            transform: scaleX(1.0) scaleY(1.0)translateX(0px)
+        }
+    
+        62.5%{
+            transform: scaleX(0.95) scaleY(1.05) translateX(-30px)
+        }
+    
+        75%{
+            transform: scaleX(1) scaleY(1) translateX(-75px)
+        }
+    
+        87.5%{
+            transform: scaleX(1.05) scaleY(0.95) translateX(-130px)
+        }
+    
+        100%{
+            transform: scaleX(1.0) scaleY(1.0) translateX(-170px)
+        }
+    }
 }
 
 @media screen and (max-width: 440px) {
@@ -130,11 +168,87 @@ body{
         width: 350px;
         height: 320px;
     }
+
+    @keyframes tasty-truck{
+        0%{
+            transform: scaleX(1.0) scaleY(1.0) translateX(150px)
+        } 
+    
+        12.5%{
+            transform: scaleX(0.95) scaleY(1.05) translateX(120px)
+        }
+    
+        25%{
+            transform: scaleX(1) scaleY(1) translateX(77px)
+        }
+    
+        37.5%{
+            transform: scaleX(1.05) scaleY(0.95) translateX(30px)
+        }
+    
+        50%{
+            transform: scaleX(1.0) scaleY(1.0)translateX(0px)
+        }
+    
+        62.5%{
+            transform: scaleX(0.95) scaleY(1.05) translateX(-30px)
+        }
+    
+        75%{
+            transform: scaleX(1) scaleY(1) translateX(-75px)
+        }
+    
+        87.5%{
+            transform: scaleX(1.05) scaleY(0.95) translateX(-110px)
+        }
+    
+        100%{
+            transform: scaleX(1.0) scaleY(1.0) translateX(-150px)
+        }
+    }
 }
 
 @media screen and (max-width: 390px) {
     .thx-content {
         width: 330px;
         height: 300px;
+    }
+
+    @keyframes tasty-truck{
+        0%{
+            transform: scaleX(1.0) scaleY(1.0) translateX(140px)
+        } 
+    
+        12.5%{
+            transform: scaleX(0.95) scaleY(1.05) translateX(100px)
+        }
+    
+        25%{
+            transform: scaleX(1) scaleY(1) translateX(50px)
+        }
+    
+        37.5%{
+            transform: scaleX(1.05) scaleY(0.95) translateX(30px)
+        }
+    
+        50%{
+            transform: scaleX(1.0) scaleY(1.0)translateX(0px)
+        }
+    
+        62.5%{
+            transform: scaleX(0.95) scaleY(1.05) translateX(-30px)
+        }
+    
+        75%{
+            transform: scaleX(1) scaleY(1) translateX(-50px)
+        }
+    
+        87.5%{
+            transform: scaleX(1.05) scaleY(0.95) translateX(-100px)
+        }
+    
+        100%{
+            transform: scaleX(1.0) scaleY(1.0) translateX(-140px)
+        }
     }
 }
