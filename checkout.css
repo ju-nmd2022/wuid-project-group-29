@@ -772,16 +772,27 @@ h3{
     width:300px;
     border-radius:20px;
     cursor:pointer;
-}
-
-.purchase-text{
-    margin-top:auto;
-    margin-bottom:auto;
-    display:block;
+    display:flex;
+    justify-content: center;
+    vertical-align: center;
     text-align:center;
     font-family:verdana;
     font-size:30px;
-    margin-top:20px;
+    border:none;
+    padding:20px
+}
+
+.purchase-link{
+    text-align:center;
+    font-family:verdana;
+    font-size:30px;
+    text-decoration:none;
+}
+.purchase-text:after{
+    text-align:center;
+    font-family:verdana;
+    font-size:30px;  
+    text-decoration:none;
 }
 
 /*-------------media screens---------------*/
