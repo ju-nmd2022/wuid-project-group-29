@@ -65,12 +65,12 @@ body{
     transition: 0.4s;
 }
 
-.signin-box .buSubmit:hover {
+/* .signin-box .buSubmit:hover {
     background-color: white;
     border: 2px solid #4db533 ;
     color: #4db533;
     cursor: pointer;
-}
+} */
 
 .signin-box a {
     text-decoration: none;
