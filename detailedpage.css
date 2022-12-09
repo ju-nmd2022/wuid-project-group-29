@@ -73,12 +73,14 @@
   padding: 7px 14px;
 }
 
-.bu-heart .fa-heart-empty {
+.bu-heart #fa-heart-empty {
     display: block;
+    margin-bottom:5px;
 }
 
 .bu-heart #fa-heart-filled {
     display: none;
+    margin-bottom:5px;
 }
 
 .bu-heart:hover {
