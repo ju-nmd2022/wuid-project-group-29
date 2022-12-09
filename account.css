@@ -1,5 +1,7 @@
 body{
     background: url(IMG/cuttingboard.png); 
+    background-repeat: no-repeat;
+    background-position: center;
     height: 100vh;
 }
 
@@ -21,6 +23,8 @@ body{
     padding-left: 85px;
     padding-right: 20px;
     margin-top: 50px;
+    display:flex;
+    flex-direction: column;
 }
 
 .signin-box h1 {
@@ -30,6 +34,7 @@ body{
     margin-top: 20px;
     margin-bottom: 10px;
     color: black;
+    text-align:left;
 }
 
 .signin-box p  {
@@ -39,7 +44,7 @@ body{
 
 .signin-box input {
     font-size: 16px;
-    width: 100%;
+    width: 80%;
     padding: 15px 10px;
     margin-bottom: 10px;
     border: 0;
@@ -75,7 +80,8 @@ body{
 }
 
 form{
-    float:left;
+    align-self:center;
+    width:100%;
 }
 
 /* ---- Footer ---- */
