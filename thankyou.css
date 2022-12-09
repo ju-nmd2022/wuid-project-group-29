@@ -66,7 +66,7 @@ body{
     width:250px;
     align-self:center;
     animation-name: tasty-truck;
-    animation-duration: 1.0s;
+    animation-duration: 3.0s;
     animation-delay: none;
     animation-iteration-count:infinite;
     animation-timing-function: linear;
@@ -74,21 +74,38 @@ body{
 
 @keyframes tasty-truck{
     0%{
-        transform: scaleX(1.0) scaleY(1.0) /* translateX(0px) */
+        transform: scaleX(1.0) scaleY(1.0) translateX(185px)
     } 
 
+    12.5%{
+        transform: scaleX(0.95) scaleY(1.05) translateX(140px)
+    }
+
     25%{
-        transform: scaleX(1.05) scaleY(0.95) /* translateX(20px) */
+        transform: scaleX(1) scaleY(1) translateX(80px)
+    }
+
+    37.5%{
+        transform: scaleX(1.05) scaleY(0.95) translateX(40px)
     }
 
     50%{
-        transform: scaleX(1.0) scaleY(1.0) /* translateX(0px) */
+        transform: scaleX(1.0) scaleY(1.0)translateX(0px)
+    }
+
+    62.5%{
+        transform: scaleX(0.95) scaleY(1.05) translateX(-40px)
     }
 
     75%{
-        transform: scaleX(0.95) scaleY(1.05) /* translateX(-20px) */
+        transform: scaleX(1) scaleY(1) translateX(-80px)
     }
+
+    87.5%{
+        transform: scaleX(1.05) scaleY(0.95) translateX(-140px)
+    }
+
     100%{
-        transform: scaleX(1.0) scaleY(1.0) /* translateX(0px) */
+        transform: scaleX(1.0) scaleY(1.0) translateX(-185px)
     }
 }
