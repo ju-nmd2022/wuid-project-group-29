@@ -782,6 +782,12 @@ h3{
     padding:20px
 }
 
+.purchase-actual-button:hover {
+    background-color:white;
+    color:#4db533;
+    border:solid 3px #4db533;
+}
+
 .purchase-link{
     text-align:center;
     font-family:verdana;

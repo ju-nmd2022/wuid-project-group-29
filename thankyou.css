@@ -3,6 +3,7 @@ body{
     height: 100vh;
 }
 
+/* ---- Thank you box ---- */
 .thx-box {
     grid-area: product;
     margin-top: 100px;
@@ -62,6 +63,7 @@ body{
     font-size: 14px;
 }
 
+/* ---- Animation -- truck ---- */
 .truck-tasty{
     height:180px;
     width:250px;
@@ -108,5 +110,37 @@ body{
 
     100%{
         transform: scaleX(1.0) scaleY(1.0) translateX(-185px)
+    }
+}
+
+/* ---- Media Queries ---- */
+@media screen and (max-width: 540px) {
+    .thx-content {
+        width: 400px;
+        height: 370px;
+    }
+    .truck-tasty{
+        height:100px;
+        width:auto;
+        align-self:center;
+        animation-name: tasty-truck;
+        animation-duration: 3.0s;
+        animation-delay: none;
+        animation-iteration-count:infinite;
+        animation-timing-function: linear;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .thx-content {
+        width: 350px;
+        height: 320px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .thx-content {
+        width: 330px;
+        height: 300px;
     }
 }
