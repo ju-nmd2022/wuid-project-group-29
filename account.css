@@ -1,5 +1,8 @@
 body{
-    background: url(IMG/cuttingboard.png); 
+    background: url(IMG/cuttingboard.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
 }
 
 /* --- Sign In ---- */
