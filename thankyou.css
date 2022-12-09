@@ -122,12 +122,6 @@ body{
     .truck-tasty{
         height:100px;
         width:auto;
-        align-self:center;
-        animation-name: tasty-truck;
-        animation-duration: 3.0s;
-        animation-delay: none;
-        animation-iteration-count:infinite;
-        animation-timing-function: linear;
     }
 }
 
