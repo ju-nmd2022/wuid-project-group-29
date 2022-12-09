@@ -20,6 +20,7 @@
     grid-template-rows:fit-content fit-content fit-content fit-content fit-content;
     grid-template-areas:
     '. section .'
+    '. section-text .'
     '. product .'
     '. product2 .'
     '. product3 .'
